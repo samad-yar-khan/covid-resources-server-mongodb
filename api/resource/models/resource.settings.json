@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resources",
+  "info": {
+    "name": "Resource"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "location": {
+      "type": "string"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "resources",
+      "dominant": true
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "verified_at": {
+      "type": "datetime"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "votes": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

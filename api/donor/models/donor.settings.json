@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "donors",
+  "info": {
+    "name": "Donor",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "blood_group": {
+      "model": "blood-group",
+      "via": "donors"
+    },
+    "location": {
+      "type": "string"
+    }
+  }
+}

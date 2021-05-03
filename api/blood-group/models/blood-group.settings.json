@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blood_groups",
+  "info": {
+    "name": "Blood-Group"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "donors": {
+      "via": "blood_group",
+      "collection": "donor"
+    }
+  }
+}
