@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "community_posts",
+  "info": {
+    "name": "community_post"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "location": {
+      "type": "string"
+    },
+    "votes": {
+      "type": "integer"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
