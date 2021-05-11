@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "community_posts",
   "info": {
-    "name": "community_post",
+    "name": "community-post",
     "description": ""
   },
   "options": {
@@ -15,7 +15,7 @@
     "title": {
       "type": "string"
     },
-    "description": {
+    "content": {
       "type": "richtext",
       "required": true
     },
@@ -23,14 +23,18 @@
       "type": "string"
     },
     "votes": {
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "phone": {
       "type": "biginteger",
-      "required": true
+      "required": false
     },
     "name": {
       "type": "string"
+    },
+    "email": {
+      "type": "email"
     }
   }
 }
