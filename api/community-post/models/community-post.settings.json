@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "community_posts",
   "info": {
-    "name": "community_post"
+    "name": "community_post",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -15,7 +16,8 @@
       "type": "string"
     },
     "description": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "location": {
       "type": "string"
@@ -24,7 +26,8 @@
       "type": "integer"
     },
     "phone": {
-      "type": "biginteger"
+      "type": "biginteger",
+      "required": true
     },
     "name": {
       "type": "string"
